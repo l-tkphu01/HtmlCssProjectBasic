@@ -1,0 +1,31 @@
+Cần học được gì và làm được gì trong khóa học (HTML_CSS_JS).
+
+- xây dựng được giao diện website
+- phân tích giao diện website
+- đặt tên class theo tiêu chuẩn BEM
+- xây dựng layout với Flexbox
+- làm hiệu ứng với animation
+- xây dựng giao diện responsive (dạo diện thích ứng, tạo ra giao diện trải nghiệm tốt cho người dùng khi truy cập vào nhìu
+loại thiết bị khác nhau, ví dụ về thích ứng với điện thoại, máy tính bảng)
+- rất nhiều các kĩ năng nâng cao khác.
+
+- sử dụng rất rộng rãi trong các giao diện website.
+
+HTML_CSS là gì? | ví dụ trực quan về HTML và CSS.
+
+HTML là chữ viết tắt của "Hypertext Markup Language" (ngôn ngữ đánh dấu siêu văn bản). Nó giúp cho người dùng tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng
+phân chia các đoạn văn, heading (phần mở đầu), links, blockquotes (trích dẫn hình ảnh, video), vv.... (nguyên vật liệu, khung sườn để xây nhà).
+
+CSS là ngôn ngữ tạo (phong cách) cho trang web - Cascading Style Sheet language. Nó dùng để tạo phong cách và định kiểu cho những yếu tố
+được viết dưới dạng ngôn ngữ đánh dấu, như HTML.
+
+*Dev - tools.
+
+- Element: chứa tất cả các phần tử của chúng ta (những phần tử HTML).
+- stype: hiện thị ra những thuộc tính CSS
+- console: khi dùng để code javascrip 
+- sources: để chúng ta biết được là chúng ta đã sử lí được những nguồn tài nguyên nào.
+
+những website hình mây: là những website bên ngoài.
+
+cấu trúc cơ bản của một file (html): 
