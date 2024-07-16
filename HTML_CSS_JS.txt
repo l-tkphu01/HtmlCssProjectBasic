@@ -22,10 +22,14 @@ CSS là ngôn ngữ tạo (phong cách) cho trang web - Cascading Style Sheet la
 *Dev - tools.
 
 - Element: chứa tất cả các phần tử của chúng ta (những phần tử HTML).
-- stype: hiện thị ra những thuộc tính CSS
+- stype: hiện thị ra những thuộc tính CSS (để tạo phong cách cho trang web).
 - console: khi dùng để code javascrip 
 - sources: để chúng ta biết được là chúng ta đã sử lí được những nguồn tài nguyên nào.
-
+- nextwork: những tài nguyên khi ta tải từ những tap bên ngoài ví dụ (hình ảnh,...)
+- toggle device toolbar: chuyển đổi mô phỏng trang web đó sang điện thoại (laptop)...để code phù hợp cho màn hình từng đt.
 những website hình mây: là những website bên ngoài.
 
 cấu trúc cơ bản của một file (html): 
+
+- page ruler: đo kích thước của một thành phần nào đó trong trang web của chúng ta.
+- khi trong thẻ body "<" sẽ lỗi vì nhận nhầm là thẻ mở.
