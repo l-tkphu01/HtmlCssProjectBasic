@@ -47,3 +47,6 @@ External:
 Inline:
 - thêm màu sắc trực tiếp vào các thẻ ví dụ <h1 Style<>phú đẹp trai quá trời</h1>
 
+*KHÁI NIỆM ID VÀ CLASS TRONG CSS SELECTORS
+- cách để gọi được tới những cái element trong thẻ html
+- lưu ý: khi học javascrip sử dụng 2 id trung nhau sẽ kh select được.
