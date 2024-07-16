@@ -33,3 +33,17 @@ cấu trúc cơ bản của một file (html):
 
 - page ruler: đo kích thước của một thành phần nào đó trong trang web của chúng ta.
 - khi trong thẻ body "<" sẽ lỗi vì nhận nhầm là thẻ mở.
+
+*CÁCH SỬ DỤNG CSS TRONG THẺ HTML.
+
+có 3 cách: Internal (bên trong), External, Inline
+
+Internal: (bên trong thẻ stype): bao gồm color, font-size, 
+- đặt bất cứ đâu cũng được nma lưu ý kh được đặt ở giữa mấy cái chữ là được.
+- sử dụng một cặp thẻ style đặt trong html của chúng ta và viết css vào đó
+External: 
+- để bỏ liên kết ra bên ngoài hàm (main.css) dùng External. dẫn liên kết vào index.html
+để kiểm tra main.css đã được liên kết với tệp html chưa nhấn chuột phải chọn kiểm tra sau đó nhấn vào source.
+Inline:
+- thêm màu sắc trực tiếp vào các thẻ ví dụ <h1 Style<>phú đẹp trai quá trời</h1>
+
