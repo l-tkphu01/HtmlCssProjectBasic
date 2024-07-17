@@ -1,4 +1,4 @@
-Cần học được gì và làm được gì trong khóa học (HTML_CSS_JS).
+*Cần học được gì và làm được gì trong khóa học (HTML_CSS_JS).
 
 - xây dựng được giao diện website
 - phân tích giao diện website
@@ -11,7 +11,7 @@ loại thiết bị khác nhau, ví dụ về thích ứng với điện thoại
 
 - sử dụng rất rộng rãi trong các giao diện website.
 
-HTML_CSS là gì? | ví dụ trực quan về HTML và CSS.
+*HTML_CSS là gì? | ví dụ trực quan về HTML và CSS.
 
 HTML là chữ viết tắt của "Hypertext Markup Language" (ngôn ngữ đánh dấu siêu văn bản). Nó giúp cho người dùng tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng
 phân chia các đoạn văn, heading (phần mở đầu), links, blockquotes (trích dẫn hình ảnh, video), vv.... (nguyên vật liệu, khung sườn để xây nhà).
@@ -29,7 +29,7 @@ CSS là ngôn ngữ tạo (phong cách) cho trang web - Cascading Style Sheet la
 - toggle device toolbar: chuyển đổi mô phỏng trang web đó sang điện thoại (laptop)...để code phù hợp cho màn hình từng đt.
 những website hình mây: là những website bên ngoài.
 
-cấu trúc cơ bản của một file (html): 
+*cấu trúc cơ bản của một file (html): 
 
 - page ruler: đo kích thước của một thành phần nào đó trong trang web của chúng ta.
 - khi trong thẻ body "<" sẽ lỗi vì nhận nhầm là thẻ mở.
@@ -50,3 +50,83 @@ Inline:
 *KHÁI NIỆM ID VÀ CLASS TRONG CSS SELECTORS
 - cách để gọi được tới những cái element trong thẻ html
 - lưu ý: khi học javascrip sử dụng 2 id trung nhau sẽ kh select được.
+
+*XÉT SỰ ƯU TIÊN TRONG CSS
+priority?
+
+1. Internal, External? : kh ai ưu tiên hơn cách nào(ông nào được gọi sau thì ông đó ms hơn và đc ưu tiên hơn)
+2. Inline - 1000   những css này: cái nào mà được gọi nhiều điểm hơn thì sẽ được ưu tiên hơn.
+3. #id - 100
+4. .class - 10
+5. tag - 1 <là những thẻ h1 - h6>
+6. Equal specificity?
+- có nghĩa là gọi heading-id... lại 1 lần nữa (thk nào viết trước, lớn hơn thì sẽ được ưu tiên).
+7. Universal (0 điểm) selector and inherited (kế thừa: thừa hưởng từ những thk khác)? 0 điểm
+
+important: khi xuất hiện thì đặc biệt ưu tiên ví dụ: 
+li { //li: list, ul: unorder list
+    color: black !important;
+}
+
+*CSS Variable là gì? (kĩ thuật đặc biến trong css).
+
+:root { 
+    --text-color: violet; 
+}
+
+/* kĩ thuật local */
+h1 {
+    --my-color: green;
+    color: var(--my-color);
+}
+
+h2 {
+    color: var(--my-color);
+}
+
+h3 {
+    color: var(--text-color);
+}
+
+*Abolute units? : đơn vị tuyệt đối.
+. px: độ phân giải trên màn hình, điểm ảnh trên màn hình.
+1px/ css tương ứng với 1 điểm ảnh thực trên màn hình độ phân giải thấp, đối với độ phân giải cao, 1 px tương ứng với nhiều 
+điểm ảnh thực hơn 
+. priority
+. cm
+. mm
+. inch
+. pc
+
+*Relative units? : đơn vị tương đối
+. % : phụ thuộc vào thử chứa nó.
+. rem: phụ thuộc thẻ html
+. em: phụ thuộc vào thẻ gần nhất chứa nó (lần lượt duyệt qua các thẻ div, body, html, thẻ nào có thuộc tính font-size).
+nên là khi ta thay đổi html: 1000px đi nữa cx không thay đổi đơn vị 1em.
+
+*khuyến khích sử dụng: rem (vì nó phụ thuộc vào html dễ kiểm soát hơn)
+. vw: viewport - width: chiều ngang.
+. vh: viewport - height: chiều dọc.
+. vmin
+. vmax
+. ex
+. ch
+
++ muốn chiều rộng và chiều ngang luôn bằng với màn hình thì dùng vw, vh.
++ muốn chiều ngang tỉ lệ với một đối tượng chứa nó thì sử dụng %
+
+*Lưu ý: khi sử dụng màu sắc để css cho các phong chữ đặc nó trong <style>
+</style>
+
+
+*để tạo ô màu(hình vuông): 
+<style>
+            .box {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+ </style>
+
+//phải có một thẻ div trong phần thân body:
+<div class="box"></div>

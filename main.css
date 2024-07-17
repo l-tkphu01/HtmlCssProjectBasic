@@ -1,9 +1,37 @@
-#first-heading {
+/* * {
     color: red;
-    font-size: 32px; 
+}
+*/
+
+/* html {
+    color: violet;
+} 
+
+li {
+color: black !important;
 }
 
-.second-heading {
-    color: green;
-    font-size: 20px;
+li {
+    color: green !important;
+}   */
+
+/* đặt biết css varible. */
+
+/* khi muốn sửa tất cả các màu sang 1 màu khác cùng nhau thì gọi biến :root (toàn cục) */
+/* :root { 
+    --text-color: violet; 
 }
+
+kĩ thuật local 
+h1 {
+    --my-color: green;
+    color: var(--my-color);
+}
+
+h2 {
+    color: var(--my-color);
+}
+
+h3 {
+    color: var(--text-color);
+} */

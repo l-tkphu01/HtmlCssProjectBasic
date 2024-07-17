@@ -5,27 +5,93 @@
         <meta chaset="utf-8">
         <link rel="stylesheet" href="main.css"> <!--phải có stylesheet thì nó mới hiểu là css-->
         <!-- <style> 
-            h1 {
-                color: red;
-                font-size: 20px; 
+            h1#heading-id.heading-class{
+                color: blue;
             }
+            #heading-id.heading-class { 
+                color: pink; 
+            } 
+            .heading-class {
+                color: yellow;
+            }
+            h1 {
+                color: green;
+            }
+
         </style> -->
-    </head>
+
+        <style>
+            .box {
+                width: 50%;
+                height: 100px;
+                background-color: red;
+            }
+
+
+        h1 {
+            font-size: 40px;
+        }
+    
+    </style>
+    
+    </head>   
 
     <body>
+        <div class="box"></div>
         <div>
+
             <!-- <h1 title="đây là tiêu đề">Attribute?</h1>  attribute: là thuộc tính của thẻ html (attribute) -->
             <!-- <h1 style="color: red; font-size: 16px;">CSS in HTML?</h1> (kh cần ; cx được)
-            <ul>
+            <ol>
                 <li>Internal</li>
                 <li>External</li>
                 <li>Inline</li>
-            </ul> -->
+            </ol> -->
 
-            <h1 id="first-heading">CSS selectors?</h1> <!--id phải khác nhau kh đc bằng nhau-->
-            <h1 class="second-heading">CSS selectors?</h1> <!--sử dụng 1 lớp cho nhiều phần tử khác nhau-->
+            <!-- <h1 id="first-heading">CSS selectors?</h1> 
             <h1 class="second-heading">CSS selectors?</h1>
-            <h2 class="second-heading">ID & Class</h2>
+            <h1 class="second-heading">CSS selectors?</h1>
+            <h2 class="second-heading">ID & Class</h2> -->
+            <!-- <h1 id="heading-id" class="heading-class">Priority?</h1>  -->
+            <!-- <h1 style="color: violet;">Priority?</h1> thuộc tính inline -->
+            <!-- <ol>
+                <li>Internal, External</li>
+                <li>Inline - 1000</li>
+                <li>#id - 100</li>
+                <li>.class - 10</li>
+                <li>tag - 1</li>
+                <li>Equal specifility?</li>
+                <li>Universal selector and inherited?</li>
+            </ol> -->
+
+            <!-- <h1>CSS Varible?</h1>
+            <h2>H2</h2>
+            <h3>H3</h3> -->
+
+            <!-- <h1>CSS units?</h1> -->
+            <h2>1. Absoluter units?</h2> 
+            <ul>
+                <li>px</li>  
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+
+            <h2>2. Relative units?</h2>
+
+            <ul>
+                <li>%</li>
+                <li>rem</li>
+                <li>em</li>
+                <li>vw</li>
+                <li>vh</li>
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+            </ul>
         </div>
     </body>
 </html>
