@@ -130,3 +130,45 @@ nên là khi ta thay đổi html: 1000px đi nữa cx không thay đổi đơn v
 
 //phải có một thẻ div trong phần thân body:
 <div class="box"></div>
+
+*thuộc tính Padding trong CSS|CSS padding.
+
+
+các đơn vị hôm qua được học:
+
+px: pixel
+rem:
+em:
+vw: chiều ngang
+vh: chiều dọc
+
+ display: flex;
+ align-items: center;
+ justify-content: center;  
+- căn giữa chữ ra cái hình màu.
+
+*sơ đồ khối của element trong html
++padding: đệm
++boder: lớp viền ngoài cùng ôm element
+margin: 
+
+ /* padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px; */
+    có thể viết tắc là: padding: 10px 12px 8px 6px (trên, phải, dưới, trái);
++ chức năng các thứ đều tương tự.
++dashed: nét đứt.
++solid: nét liền.
++inherit: thừa kế
++initial: giá trị ban đầu
++none: (không xét boder, còn tất cả những thk khác thì xét boder bình thường)
+
+*cách viết tắt của boder:
+border-width: 10px = border-top-width: 10px
+                   = boder-right-width: 10px
+                   = boder-bottom-width: 10px
+                   = border-left-width: 10px
+            
+* Thuộc tính margin trong CSS.(TƯ DUY SỬ DỤNG CSS MARGIN)
+- muốn tạo ra khoảng cách đẩy box2, box3 xa nhau ra

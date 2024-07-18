@@ -6,39 +6,61 @@
         <link rel="stylesheet" href="main.css"> <!--phải có stylesheet thì nó mới hiểu là css-->
 
         <style>
+            html, body {
+                margin: 0;
+            }
+        </style>
+
+        <style>
 /* h1 tương ứng với html có nghĩa: 1rem = 20px */
             html {
                 font-size: 20px;
             }
 
             .box {
-                width: 50vw;
-                height: 50vh;
-                background-color: red;
+                width: 60px;
+                height: 60px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center; 
             }
-        
-        h1 {
-            font-size: 1em;
-        }
-    
+            .box {
+                background-color: #333;
+            }
+            
+            .box2 {
+                background-color: orange;
+            }
+
+            .box3 {
+                background-color: firebrick;
+                /* padding-top: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 10px; */
+                /* padding: 10px; */
+                /* border-width: 10px; */
+                /* border-top-width: 10px;
+                border-right-width: 12px;
+                border-bottom-width: 10px;
+                border-left-width: 12px;
+                border-style: solid;
+                border-color: #333; */
+                /* trên phải dưới trái */
+            }
+
         </style>
     </head>   
 
-    <body style="font-size: 50px">
-        <div class="box"></div>
+    <body>
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+        <div class="box box3">box 3</div>
 
-        <div>
+        <!-- <div>
             <h1>CSS units?</h1>
-        </div>
+        </div> -->
     </body>
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        div:not(.box) {
-            padding: 16px;
-        }
-    </style>
 </html>
+
