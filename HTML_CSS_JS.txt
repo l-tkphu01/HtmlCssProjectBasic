@@ -172,3 +172,11 @@ border-width: 10px = border-top-width: 10px
             
 * Thuộc tính margin trong CSS.(TƯ DUY SỬ DỤNG CSS MARGIN)
 - muốn tạo ra khoảng cách đẩy box2, box3 xa nhau ra
+-float-left: giúp cho tất cả các element nằm trên một mặt ngang: 
+
+*CSS box-sizing(tính ứng dụng của box-sizing): được sử dụng để kiểm soát cách kích thước của phần tử(element) được tính toán
+quyết định padding và border.
+
+-box-sizing: unset; có tác dụng hủy đi các thao tác vừa đề cập.
+
+*CSS background-clip(thuộc tính background-clip).
