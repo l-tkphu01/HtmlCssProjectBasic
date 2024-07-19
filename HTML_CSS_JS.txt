@@ -179,4 +179,22 @@ quyết định padding và border.
 
 -box-sizing: unset; có tác dụng hủy đi các thao tác vừa đề cập.
 
-*CSS background-clip(thuộc tính background-clip).
+*CSS background-clip(thuộc tính background-clip)
+- giúp kiểm soát phạm vi vẽ nền của phần tử tương ứng với border và padding thì sẽ có giới hạn tương xứng
+
+*CSS background-image.
+- background-size: 100px; (xét theo chìu ngang(width) còn chìu dọc thì auto chỉnh lại size kích thước của ảnh.
+- background-repeat: no-repeat; mất đi thuộc tính lặp lại.
+- background-repeat: repeat-x; lặp chiều dọc
+- background-repeat: repeat-y; lặp chiều ngang
+- background-repeat: no-repeat; bỏ lặp.
+- background-image: url(--thêm ảnh link vào đây--); link nào trước thì hiện trước.
+- background-image: linear-gradient(--thêm tham số vào--); dải màu truyền đều đặn.
+- background-size: contain; cố gắng lấy chiều dài nhất có thể, miễn là không bị che khuất, cắt xén thì mới lấy
+- background-size: cover chap nhan bi che luon
+- background-origin: tương tự như background-clip;
+- background-origin: padding-box;
+- background-origin: border-box;
+- background-origin: content-box;
+vd: background-image: linear-gradient(180deg, #333, #ccc)
+cách sr trong suốt: star png
