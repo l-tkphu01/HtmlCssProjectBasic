@@ -183,11 +183,10 @@ quyết định padding và border.
 - giúp kiểm soát phạm vi vẽ nền của phần tử tương ứng với border và padding thì sẽ có giới hạn tương xứng
 
 *CSS background-image.
-- background-size: 100px; (xét theo chìu ngang(width) còn chìu dọc thì auto chỉnh lại size kích thước của ảnh.
+- background-size: 100px; (xét theo chìu ngang(width))còn chìu dọc thì auto chỉnh lại size kích thước của ảnh.
 - background-repeat: no-repeat; mất đi thuộc tính lặp lại.
 - background-repeat: repeat-x; lặp chiều dọc
-- background-repeat: repeat-y; lặp chiều ngang
-- background-repeat: no-repeat; bỏ lặp.
+- background-repeat: repeat-y; bỏ lặp.
 - background-image: url(--thêm ảnh link vào đây--); link nào trước thì hiện trước.
 - background-image: linear-gradient(--thêm tham số vào--); dải màu truyền đều đặn.
 - background-size: contain; cố gắng lấy chiều dài nhất có thể, miễn là không bị che khuất, cắt xén thì mới lấy
@@ -196,5 +195,31 @@ quyết định padding và border.
 - background-origin: padding-box;
 - background-origin: border-box;
 - background-origin: content-box;
+- background-position: bottom right; vị trí (giúp tùy chỉnh được vị trí của ảnh nền trong css);
+- background-position: bottom center; (căn giữa).
++ center: căn giữa.
+- background-position: 50px; từ mép trở vô trong.
+- background-position: top 20px right 20px;
+- background-position: 30px 50px; 30 từ chìu ngang, 50 từ trên dịch xún
 vd: background-image: linear-gradient(180deg, #333, #ccc)
 cách sr trong suốt: star png
+
+*cú pháp shorthand: 
+có thể gọp chung các thuộc tính sau đây:
+background-image: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQHaEK&pid=Api&P=0&h=220);
+                background-repeat: no-repeat;
+                background-position: center; 
+                background-size: contain;
+
+background: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQHaEK&pid=Api&P=0&h=220) no-repeat center / contain;
+
+*CSS Functions(hàm trong css);
+. var() : học trong đặt biến css.
+. linear-gradient()
+. rgba()
+. rgb()
+. calc()
+. attr()
+
+ width: calc(80% + 20%);
+ background: rgb(209, 178, 22);
