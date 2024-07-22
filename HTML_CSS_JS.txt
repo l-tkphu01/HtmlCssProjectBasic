@@ -223,3 +223,30 @@ background: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQHaEK&pi
 
  width: calc(80% + 20%);
  background: rgb(209, 178, 22);
+ attr(): thuộc tính của thẻ html
+ <a href="https://fullstack.edu.vn/">trang dạy học lập trình</a>
+ (để cập nhật đường link dẫn đến trang dạy học lập trình thì làm như sau): 
+ - sử dụng lớp giả 
+ - attr: sẽ lấy được giá trị của <a href></a>
+cách đẩy link: 
+ .box::after {
+                content: attr(data-title);
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
+            }
+ 
+    <div class="box" data-title="Đây là box màu hồng"></div>
+
+    <a href="https://fullstack.edu.vn/">trang dạy học lập trình</a>
+
+- <div class="box" title="Đây là box màu hồng"></div> : hiện ra chữ bé bé (ẩn ẩn, dí chuột vào nó sẽ hiện ra)
+
+* CSS pseudo-class: lớp giả.
+- bao h cũng có dấu 2 chấm ở trước lớp giả.
+:root (tham chíu tới chính phần tử gốc của file html)
+:hover 
+:active
+:first-child
+:last-child

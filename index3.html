@@ -11,26 +11,44 @@
             }
 
             .box {
-                width: calc(80% + 20%);
+                width: 100%;
                 height: 120px;
-                background: rgb(209, 178, 22);
+                background: rgb(223, 91, 188);
+            }
+
+            .box::after {
+                content: attr(data-title);
+            }
+
+            a::after {
+                content: " (" attr(href) ")";
             }
         </style>
-
 </head>
-<body>
-    <div class="box"></div> 
 
-    <a href="https://fullstack.edu.vn/">Học lập trình</a>
+<body>
+    
+    <!--(1) <div class="box" data-title="Đây là box màu hồng"></div>
+
+    <a href="https://fullstack.edu.vn/">trang dạy học lập trình</a>
     <h1>CSS functions</h1>
     <ul>
         <li>var()</li>
-        <li>linear-gradient()</li>
+        <li>linear-gradient</li>
         <li>rgba()</li>
         <li>rgb()</li>
         <li>calc()</li>
         <li>attr()</li>
+    </ul> (1)-->
+    <div class="box"></div>
+
+    <h1>CSS pseudo-classes</h1>
+    <ul>
+        <li>:root</li>
+        <li>:hover</li>
+        <li>:active</li>
+        <li>:first-child</li>
+        <li>:last-child</li>
     </ul>
 </body>
-
-   
+</html>
