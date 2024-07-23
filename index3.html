@@ -23,6 +23,44 @@
             a::after {
                 content: " (" attr(href) ")";
             }
+
+            /* h1:active {
+                color: red;
+            } */
+
+            /* .box:hover {
+                background-color: #333;
+            }
+
+
+            li:first-child {
+                color: red;
+                font-size: 40px;
+            } */
+
+            /* .box::before {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            }
+                .box::after {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+            } */
+
+            /* h1::first-line {
+                color: red;
+            } */
+
+            ::selection {
+                background-color: violet;
+                color: #fff;
+            }
         </style>
 </head>
 
@@ -42,13 +80,13 @@
     </ul> (1)-->
     <div class="box"></div>
 
-    <h1>CSS pseudo-classes</h1>
+    <h1>CSS pseudo-elements <br />dòng thứ 2 </h1>
     <ul>
-        <li>:root</li>
-        <li>:hover</li>
-        <li>:active</li>
-        <li>:first-child</li>
-        <li>:last-child</li>
+        <li>::before</li>
+        <li>::after</li>
+        <li>::first-letter</li>
+        <li>::last-line</li>
+        <li>::selection</li>
     </ul>
 </body>
 </html>

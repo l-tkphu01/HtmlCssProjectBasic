@@ -245,8 +245,45 @@ cách đẩy link:
 
 * CSS pseudo-class: lớp giả.
 - bao h cũng có dấu 2 chấm ở trước lớp giả.
-:root (tham chíu tới chính phần tử gốc của file html)
-:hover 
-:active
-:first-child
-:last-child
+:root (tham chíu tới chính phần tử gốc của file html là thẻ bao gồm toàn bộ tài liệu <html></html>)
+:hover (lấy ví dụ là h1)
+h1:hover {
+    color: red;  --> nó chỉ hiện khi chúng ta di chuột vào mà thôi.
+}
+:active (bấm chuột vào sẽ kích hoạt thuộc tính màu sắc)
+:first-child (đứa con đầu tiên: tập hợp thẻ li là con thk "ul").
+
+            li:first-child {
+                color: red;
+                font-size: 40px;
+            }
+:last-child (cuối thoai).
+
+*phần tử giả trong css.
+::before
+::after
+::first-letter (kí tự đầu tự đầu tiên màu gì (kích cỡ bao nhiêu).)
+::last-line (dòng đầu tiên) <br /> :xuống dòng.
+::selection (sự lựa chọn de chuột và bôi thì nó ms hiện ra màu).
+  h1::selection {
+                background-color: violet;
+                color: #fff;
+            }
+*lưu ý: nếu bỏ h1 đi thì nó sẽ selec toàn bộ html
+
+
+*Thuộc tính vị trí tuyệt đối(CSS Position: Absolute).
+
+- miêu tả: có một lớp màu trắng hiện ra đề lên website khi chúng ta dí chuột lên biểu tượng nào đó.
+
+Relative:  vị trí tương đối (kh bị phụ thuộc vào đối tượng nào khác, lấy chính vị trí nó đang đứng, phụ thuộc vào chính nó, nó đứng im tại chỗ luôn)
+
+ h1 {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    }
+*lưu ý: top, left chỉ hoạt hoạt động khi có position thoi.
+Absolute: tuyệt đối (phụ thuộc vào thuộc tính thẻ char gần nhất có thuộc tính "Position để làm gốc tọa độ)
+Fixed: vị trí phụ thuộc vào khung trình duyệt
+Sticky: kh khuyến cáo sử dụng vì chưa được hỗ trợ
