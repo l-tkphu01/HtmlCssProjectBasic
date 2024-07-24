@@ -284,6 +284,51 @@ Relative:  vị trí tương đối (kh bị phụ thuộc vào đối tượng 
     left: 100px;
     }
 *lưu ý: top, left chỉ hoạt hoạt động khi có position thoi.
-Absolute: tuyệt đối (phụ thuộc vào thuộc tính thẻ char gần nhất có thuộc tính "Position để làm gốc tọa độ)
+Absolute: tuyệt đối (phụ thuộc vào thuộc tính thẻ cha gần nhất có thuộc tính "Position để làm gốc tọa độ)
 Fixed: vị trí phụ thuộc vào khung trình duyệt
 Sticky: kh khuyến cáo sử dụng vì chưa được hỗ trợ
+
+- nếu muốn hàng nào trong li có màu thì dùng:  
+li:nth-of-type(2) {
+    color: violet;
+}
+
+- để phủ mờ mờ một phần trang web khi thẻ con xuất hiện thì: có chú thích trong đoạn code: đoạn cha, con.
+
+*THUỘC TÍNH POSITION: Fixed (CSS Position: Fixed).
+- mô tả: khi kéo lên kéo xuống header vẫn đứng yên thì sử dụng: "Fixed"
++ để phân biệt thk nào sử dụng fixed và thk nào sử dụng absolute: khi thấy 1 đối tượng phụ thuộc vào 1 đối tượng khác trên html dùng absolute
++ ai thuộc cửa sổ trình duyệt thì sử dụng: Fixed.
+code mẫu: 
+.header {
+    width: 100%;
+    height: 42px;
+    background-color: #333;
+    position: fixed;
+}
+
+
+
+*STICKY (thương hiệu ms dùng th, kh nên sử dụng).
+- để viết chữ trên thanh "h1" đè lên background thì sử dụng: 
+ h1 {
+
+    padding: 0 16px;
+    color: #fff;
+    background-color: #333;
+    
+    /* để thanh background-color dừng lại trên top. 
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    }
+
+31. KỸ THUẬT XÂY DỰNG LAYOUT (FLEXBOX). (THUỘC TÍNH FLEXBOX TRONG CSS).
+
+- Tạo ra được những giao diện web và bố cục trên website của bạn
++ flex container: là thẻ chứa
++ flex item: 3 thẻ con trực tiếp của thẻ chứa.
++ trục main axis(ngang): gồm main star và main end (2 thk này quyết định chiều của code) và trục cross axis(dọc): gồm cross star và cross end.
++ main size: kích thước flex item.
++ cross size: kích thước flex item.
+(mọi thằng có thể thay đổi)

@@ -10,16 +10,56 @@
                 margin: 0;
             }
 
+            li:nth-of-type(2) {
+                color: violet;
+            }
+
             /* h1 {
                 position: relative;
                 top: 100px;
                 left: 100px;
             } */
-            
+
+            .box {
+                width: 100%;
+                height: 120px;
+                background-color: #333;
+                position: relative;
+            }
+
+            .box-child {
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                position: absolute;
+                /* thẻ absolute sẽ tìm bên ngoài thẻ cha nào có thuộc tính position gần nhất để làm gốc tọa độ*/
+                top: 0px; 
+                right: 0px;
+                /* kh thể sử dụng được top vs bottom chung được vì kích thước weith và height có kích thước nhỏ kh thể chạm đc
+                ưu tiên left, top*/
+            }
+            .box2 {
+                width: 300px;
+                height: 100px;
+                background-color: violet;
+                position: absolute;
+                /* thẻ con này sẽ thuộc vào thẻ box cha gần nhất với nó. */
+                bottom: 0;
+                right: 0;
+            }
+
         </style>
     </head>
 
     <body>
+        <div class="box"> 
+            <!-- thẻ box: thẻ cha, thẻ box-child là con -->
+             <div>
+                <div class="box2">
+                    <div class="box-child"></div>
+                </div>
+             </div>
+        </div>
         <h1>Position</h1>
         <ul>
             <li>Relative</li>
