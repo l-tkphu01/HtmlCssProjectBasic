@@ -378,19 +378,48 @@ code mẫu:
 -----------------------------------------------------------------
 
 32. NHỮNG THUỘC TÍNH CSS SỬ DỤNG FLEXBOX.
+-----------------------------------------------------------------
 - display: flex | inline-flex (ngang, dọc)
 + quyết định các bạn có sử dụng layout flexbox hay k
 + để tạo ra flex container và flex item --> sử dụng display
+
+-----------------------------------------------------------------
+
 - flex-direction: row  | column (ngang, dọc)
 + thay đổi phương hướng của main axis
+-----------------------------------------------------------------
 - flex-wrap: nowrap | wrap | wrap-reverse (xuống dòng)
 + tùy chọn giá trị wrap để mà nó xuống dòng
 + wrap-reverse: đảo chìu của cross-star, cross-end.
+-----------------------------------------------------------------
 - flex-basis: <length>
 + xét kích thước cho thk main size phụ thuộc trục chính (main axis)
+-----------------------------------------------------------------
 - justify-content (cha): flex-start | flex-end | center | space-between | space-around.
+-----------------------------------------------------------------
 + căng được những cái flex-item thoe phương hướng của main axis trái, phải, giữa.
 nếu nằm dọc: căng lên trên, giữa, xuống
+-----------------------------------------------------------------
 - justify-self(con): flex-start | flex-end | center
 + xét cha r thì k cần xét cho thk con.
+-----------------------------------------------------------------
 - align-content: flex-start | flex-end | center
++ cùng phương hướng thk cross axis tương tự cách diễn giải thk justify-content
++ nếu cross axis nằm dọc thì: flex item xét lên trên, nằm giữa theo chiều ngang và xún dưới.
++ nếu cross axis nằm ngang thì: ngược lại.
+-----------------------------------------------------------------
+- align-self: flex-start | flex-end | center.
++ dùng để xét thk flex-item
+-----------------------------------------------------------------
+- flex-grow: <number> (nở ra, lớn lên)
++ thay đổi kích thước của thk main-size (phụ thuộc theo thk main axis)
+-----------------------------------------------------------------
+- flex-shrink: <number> (nhỏ lại)
+-----------------------------------------------------------------
+- flex: <number> (shorthand): cú pháp viết ngắn
++ 3 thk: flex-basis, flex-grow, flex-shrink.
+-----------------------------------------------------------------
+- order: <number> : quyết định thứ tự của thằng flex-item: thk nào hiển thị trước, thk nào sau, bth thì sẽ là mặc định, nếu
+can thiệp vào thì sử dụng: order
+-----------------------------------------------------------------
+- flex-flow: cách viết gộp của flex-direction và flex-wrap
