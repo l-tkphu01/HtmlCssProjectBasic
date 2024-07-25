@@ -10,7 +10,7 @@ loại thiết bị khác nhau, ví dụ về thích ứng với điện thoại
 - rất nhiều các kĩ năng nâng cao khác.
 
 - sử dụng rất rộng rãi trong các giao diện website.
-
+-----------------------------------------------------------------
 *HTML_CSS là gì? | ví dụ trực quan về HTML và CSS.
 
 HTML là chữ viết tắt của "Hypertext Markup Language" (ngôn ngữ đánh dấu siêu văn bản). Nó giúp cho người dùng tạo và cấu trúc các thành phần trong trang web hoặc ứng dụng
@@ -18,6 +18,8 @@ phân chia các đoạn văn, heading (phần mở đầu), links, blockquotes (
 
 CSS là ngôn ngữ tạo (phong cách) cho trang web - Cascading Style Sheet language. Nó dùng để tạo phong cách và định kiểu cho những yếu tố
 được viết dưới dạng ngôn ngữ đánh dấu, như HTML.
+
+-----------------------------------------------------------------
 
 *Dev - tools.
 
@@ -29,10 +31,14 @@ CSS là ngôn ngữ tạo (phong cách) cho trang web - Cascading Style Sheet la
 - toggle device toolbar: chuyển đổi mô phỏng trang web đó sang điện thoại (laptop)...để code phù hợp cho màn hình từng đt.
 những website hình mây: là những website bên ngoài.
 
+-----------------------------------------------------------------
+
 *cấu trúc cơ bản của một file (html): 
 
 - page ruler: đo kích thước của một thành phần nào đó trong trang web của chúng ta.
 - khi trong thẻ body "<" sẽ lỗi vì nhận nhầm là thẻ mở.
+
+-----------------------------------------------------------------
 
 *CÁCH SỬ DỤNG CSS TRONG THẺ HTML.
 
@@ -47,9 +53,13 @@ External:
 Inline:
 - thêm màu sắc trực tiếp vào các thẻ ví dụ <h1 Style<>phú đẹp trai quá trời</h1>
 
+-----------------------------------------------------------------
+
 *KHÁI NIỆM ID VÀ CLASS TRONG CSS SELECTORS
 - cách để gọi được tới những cái element trong thẻ html
 - lưu ý: khi học javascrip sử dụng 2 id trung nhau sẽ kh select được.
+
+-----------------------------------------------------------------
 
 *XÉT SỰ ƯU TIÊN TRONG CSS
 priority?
@@ -88,6 +98,8 @@ h3 {
     color: var(--text-color);
 }
 
+-----------------------------------------------------------------
+
 *Abolute units? : đơn vị tuyệt đối.
 . px: độ phân giải trên màn hình, điểm ảnh trên màn hình.
 1px/ css tương ứng với 1 điểm ảnh thực trên màn hình độ phân giải thấp, đối với độ phân giải cao, 1 px tương ứng với nhiều 
@@ -98,11 +110,15 @@ h3 {
 . inch
 . pc
 
+-----------------------------------------------------------------
+
 *Relative units? : đơn vị tương đối
 . % : phụ thuộc vào thử chứa nó.
 . rem: phụ thuộc thẻ html
 . em: phụ thuộc vào thẻ gần nhất chứa nó (lần lượt duyệt qua các thẻ div, body, html, thẻ nào có thuộc tính font-size).
 nên là khi ta thay đổi html: 1000px đi nữa cx không thay đổi đơn vị 1em.
+
+-----------------------------------------------------------------
 
 *khuyến khích sử dụng: rem (vì nó phụ thuộc vào html dễ kiểm soát hơn)
 . vw: viewport - width: chiều ngang.
@@ -131,10 +147,12 @@ nên là khi ta thay đổi html: 1000px đi nữa cx không thay đổi đơn v
 //phải có một thẻ div trong phần thân body:
 <div class="box"></div>
 
+-----------------------------------------------------------------
+
 *thuộc tính Padding trong CSS|CSS padding.
 
 
-các đơn vị hôm qua được học:
++ các đơn vị hôm qua được học:
 
 px: pixel
 rem:
@@ -146,6 +164,8 @@ vh: chiều dọc
  align-items: center;
  justify-content: center;  
 - căn giữa chữ ra cái hình màu.
+
+-----------------------------------------------------------------
 
 *sơ đồ khối của element trong html
 +padding: đệm
@@ -169,18 +189,26 @@ border-width: 10px = border-top-width: 10px
                    = boder-right-width: 10px
                    = boder-bottom-width: 10px
                    = border-left-width: 10px
-            
+
+-----------------------------------------------------------------
+
 * Thuộc tính margin trong CSS.(TƯ DUY SỬ DỤNG CSS MARGIN)
 - muốn tạo ra khoảng cách đẩy box2, box3 xa nhau ra
 -float-left: giúp cho tất cả các element nằm trên một mặt ngang: 
+
+-----------------------------------------------------------------
 
 *CSS box-sizing(tính ứng dụng của box-sizing): được sử dụng để kiểm soát cách kích thước của phần tử(element) được tính toán
 quyết định padding và border.
 
 -box-sizing: unset; có tác dụng hủy đi các thao tác vừa đề cập.
 
+-----------------------------------------------------------------
+
 *CSS background-clip(thuộc tính background-clip)
 - giúp kiểm soát phạm vi vẽ nền của phần tử tương ứng với border và padding thì sẽ có giới hạn tương xứng
+
+-----------------------------------------------------------------
 
 *CSS background-image.
 - background-size: 100px; (xét theo chìu ngang(width))còn chìu dọc thì auto chỉnh lại size kích thước của ảnh.
@@ -204,6 +232,8 @@ quyết định padding và border.
 vd: background-image: linear-gradient(180deg, #333, #ccc)
 cách sr trong suốt: star png
 
+-----------------------------------------------------------------
+
 *cú pháp shorthand: 
 có thể gọp chung các thuộc tính sau đây:
 background-image: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQHaEK&pid=Api&P=0&h=220);
@@ -212,6 +242,8 @@ background-image: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQH
                 background-size: contain;
 
 background: url(https://tse2.mm.bing.net/th?id=OIP.BZFYMEFqsd5RvV6wUB8HUQHaEK&pid=Api&P=0&h=220) no-repeat center / contain;
+
+-----------------------------------------------------------------
 
 *CSS Functions(hàm trong css);
 . var() : học trong đặt biến css.
@@ -243,6 +275,8 @@ cách đẩy link:
 
 - <div class="box" title="Đây là box màu hồng"></div> : hiện ra chữ bé bé (ẩn ẩn, dí chuột vào nó sẽ hiện ra)
 
+-----------------------------------------------------------------
+
 * CSS pseudo-class: lớp giả.
 - bao h cũng có dấu 2 chấm ở trước lớp giả.
 :root (tham chíu tới chính phần tử gốc của file html là thẻ bao gồm toàn bộ tài liệu <html></html>)
@@ -259,6 +293,8 @@ h1:hover {
             }
 :last-child (cuối thoai).
 
+-----------------------------------------------------------------
+
 *phần tử giả trong css.
 ::before
 ::after
@@ -271,6 +307,7 @@ h1:hover {
             }
 *lưu ý: nếu bỏ h1 đi thì nó sẽ selec toàn bộ html
 
+-----------------------------------------------------------------
 
 *Thuộc tính vị trí tuyệt đối(CSS Position: Absolute).
 
@@ -295,6 +332,8 @@ li:nth-of-type(2) {
 
 - để phủ mờ mờ một phần trang web khi thẻ con xuất hiện thì: có chú thích trong đoạn code: đoạn cha, con.
 
+-----------------------------------------------------------------
+
 *THUỘC TÍNH POSITION: Fixed (CSS Position: Fixed).
 - mô tả: khi kéo lên kéo xuống header vẫn đứng yên thì sử dụng: "Fixed"
 + để phân biệt thk nào sử dụng fixed và thk nào sử dụng absolute: khi thấy 1 đối tượng phụ thuộc vào 1 đối tượng khác trên html dùng absolute
@@ -307,7 +346,7 @@ code mẫu:
     position: fixed;
 }
 
-
+-----------------------------------------------------------------
 
 *STICKY (thương hiệu ms dùng th, kh nên sử dụng).
 - để viết chữ trên thanh "h1" đè lên background thì sử dụng: 
@@ -323,6 +362,8 @@ code mẫu:
     top: 0;
     }
 
+-----------------------------------------------------------------
+
 31. KỸ THUẬT XÂY DỰNG LAYOUT (FLEXBOX). (THUỘC TÍNH FLEXBOX TRONG CSS).
 
 - Tạo ra được những giao diện web và bố cục trên website của bạn
@@ -332,3 +373,7 @@ code mẫu:
 + main size: kích thước flex item.
 + cross size: kích thước flex item.
 (mọi thằng có thể thay đổi)
+
+-----------------------------------------------------------------
+
+32. 
