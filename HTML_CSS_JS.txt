@@ -423,3 +423,6 @@ nếu nằm dọc: căng lên trên, giữa, xuống
 can thiệp vào thì sử dụng: order
 -----------------------------------------------------------------
 - flex-flow: cách viết gộp của flex-direction và flex-wrap
+-----------------------------------------------------------------
+33. Học Flexbox CSS qua ví dụ | Flexbox CSS | Flexbox layout | Flexbox example | Flexbox trong CSS.
+- đầu tiên xác định được flex-container va flex-item trước
