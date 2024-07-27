@@ -322,6 +322,11 @@ li:nth-of-type(2) {
     color: violet;
 }
 
+- nếu muốn cột nào trong item có màu nào thì dùng
+.feature-item:nth-child(...) {
+    background-color: màu
+}
+
 - để phủ mờ mờ một phần trang web khi thẻ con xuất hiện thì: có chú thích trong đoạn code: đoạn cha, con.
 
 -----------------------------------------------------------------
@@ -418,3 +423,10 @@ can thiệp vào thì sử dụng: order
 -----------------------------------------------------------------
 33. Học Flexbox CSS qua ví dụ | Flexbox CSS | Flexbox layout | Flexbox example | Flexbox trong CSS.
 - đầu tiên xác định được flex-container va flex-item trước
+
+-------------------------------------------------------------------------------------------------------------
+32. Một số lưu ý khi sử dụng câu lệnh flex
+
+- justify-content: space-between; #chỉ cách giữa các item chứ k cách 2 đầu.
+- justify-content: space-around; #cách giữa với cách lề luôn nma cách khác size nhau. 
+- justify-evenly: cách đều tất cả trong và ngoài bằng nhau.
