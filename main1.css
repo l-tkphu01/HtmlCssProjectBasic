@@ -33,7 +33,7 @@ html, body {
     max-width: 900px; /*chiều dài của toàn bộ layout trong flex-container*/ 
     padding: 32px;
     margin: 36px auto 0 auto;
-    background-color: #fff;
+    background-color: #facfcf;
 }
 
 .form__row {
@@ -48,4 +48,37 @@ html, body {
 
 .form__input {
     flex: 1; /*nếu có 1 ông flex item thì nó sẽ chiếm hết toàn bộ flex container. */
+}
+
+.column-layout {
+    margin-top: 36px;
+    padding: 12px;
+    background-color: #e1d6d6;
+    display: flex;
+}
+
+.column-item {
+
+    /* khoảng cách trên dưới, phải trái của các flex-item */
+    padding: 16px 0;
+    display: inline-block;
+}
+
+.column-item {
+    /* cả 3 thằng bằng nhau luôn tại có 3 thằng item cứ kh thằng nào chiếm hết */
+    flex: 1;
+}
+
+
+/* trong trường hợp cho ông ở giữa lớn nhât */
+.sidebar-one {
+    flex: 1
+}
+
+.main-column {
+    flex: 2;
+}
+
+.sidebar-two {
+    flex: 1;
 }
