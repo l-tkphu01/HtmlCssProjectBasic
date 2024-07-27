@@ -5,7 +5,8 @@
         <title>Wed-fullstack</title>
         <meta chaset="utf-8">
         <link rel="stylesheet" href="main1.css"> <!--phải có stylesheet thì nó mới hiểu là css-->
-        
+    </head>
+
         <body>
             <!--thanh Navbar-->
             <div class="nav">
@@ -18,6 +19,19 @@
                     <li class="nav-item">Đăng ký</li>
                     <li class="nav-item">Đăng nhập</li>
             </div>
+
+            <!-- Form layout -->
+             <div class="form-container">
+                <form action="" class="form">
+                    <div class="form__row">  <!--có ý nghĩa là flex-container-->
+                        <label class="form__label" for="name">Name:</label>
+                        <input class="form__input" type="text">
+                    </div>
+                    <div class="form__row">
+                        <label class="form__label" for="password">password:</label>
+                        <input class="form__input" type="password">
+                    </div>
+                    </form>
+             </div>
         </body>
-    </head>
 </html>
