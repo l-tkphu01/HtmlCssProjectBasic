@@ -110,20 +110,41 @@ html, body {
 }
 
 .wrap-layout {
-    margin-top: 16px;
-    display: flex;
+    background-color: #fff;
+    /* cách từ trên xuống dùng margin-top*/
+    margin-top: 36px;
+    padding: 12px 0 32px 0; /*cách trên dưới phải trái*/
+    display: flex; /*để các item nằm trên một hàng ngang*/
+    justify-content: space-around; /*cách các item ra một khoảng trong và lề đều bằng nhau*/
+    flex-wrap: wrap; /*giúp xuống dòng các item và wrap-reserve: đảo ngược cross start với end*/ 
+
 }
 
 .wrap-layout__item {
-
+    width: 148px;
+    height: 90px;
+    color: #fff;
+    text-align: center;
+    line-height: 90px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    background-color: #EF5122;
 }
 
-.wrap-layout__item:nth-child(1) {
-    background-color: rgb(222, 20, 20)
+/* center layout */
+
+.center-layout {
+    background-color: #ffbebe;
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    max-width: 640px;
+    height: 360px;
+    display: flex;
 }
-.wrap-layout__item:nth-child(2) {
-    background-color: rgb(222, 20, 20)
-}
-.wrap-layout__item:nth-child(3) {
-    background-color: rgb(222, 20, 20)
+
+.center-layout__item {
+    font-size: 42px; /*để biểu diễn phong chữ to, lớn*/
+    font-weight: 700px;
+    margin: auto;
 }

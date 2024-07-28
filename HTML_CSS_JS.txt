@@ -430,3 +430,4 @@ can thiệp vào thì sử dụng: order
 - justify-content: space-between; #chỉ cách giữa các item chứ k cách 2 đầu.
 - justify-content: space-around; #cách giữa với cách lề luôn nma cách khác size nhau. 
 - justify-evenly: cách đều tất cả trong và ngoài bằng nhau.
+- wrap: xuống dòng, wrap-reverse: đổi chiều của trục cross start, end
