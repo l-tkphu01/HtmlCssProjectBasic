@@ -153,6 +153,9 @@ nên là khi ta thay đổi html: 1000px đi nữa cx không thay đổi đơn v
 
  display: flex; //đặt các chữ nằm trên hàng ngang.
  align-items: center;
+ align-items: flex-end; đặt ngược chiều từ dưới lên 
+ align-items: flex-start: từ trên xuống 
+
  justify-content: center;
  justify-content: space-between; //có chức năng dùng để căn giữa, trái phải,...dựa trên thuộc tính display-flex.
 - căn giữa chữ ra cái hình màu.
@@ -431,3 +434,5 @@ can thiệp vào thì sử dụng: order
 - justify-content: space-around; #cách giữa với cách lề luôn nma cách khác size nhau. 
 - justify-evenly: cách đều tất cả trong và ngoài bằng nhau.
 - wrap: xuống dòng, wrap-reverse: đổi chiều của trục cross start, end
+- align-self: flex-end; có chức năng sử dụng cho chính các item cá nhân.
++ có chức năng đảo chìu từ dưới lên. (flex-start)

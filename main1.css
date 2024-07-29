@@ -148,3 +148,24 @@ html, body {
     font-weight: 700px;
     margin: auto;
 }
+
+/*chart-layout*/
+.Chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap-reverse; */
+    /* align-items:flex-end; */
+}
+
+.Chart-layout__item {
+    width: 60px;
+    color: #fff;
+    text-align: center; /*đoạn văn bản nay sẽ căn giữa tất cả các đoạn văn bản trong tài liệu HTML.*/
+    height: var(--percent); /*chiều cao thì mình biến percent để biểu diễn độ cao của cột*/
+    background-color: #EF5122;
+    align-self: flex-end;
+}
