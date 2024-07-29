@@ -385,7 +385,7 @@ code mẫu:
 
 -----------------------------------------------------------------
 
-- flex-direction: row  | column (ngang, dọc)
+- flex-direction: row  | column (ngang, dọc) (column-reverse: đảo ngược lại)
 + thay đổi phương hướng của main axis
 -----------------------------------------------------------------
 - flex-wrap: nowrap | wrap | wrap-reverse (xuống dòng)
@@ -436,3 +436,16 @@ can thiệp vào thì sử dụng: order
 - wrap: xuống dòng, wrap-reverse: đổi chiều của trục cross start, end
 - align-self: flex-end; có chức năng sử dụng cho chính các item cá nhân.
 + có chức năng đảo chìu từ dưới lên. (flex-start)
+
+/*để các cột lớn lên 1 chút thì dùng pp sau*/
+@keyframes growth {
+    /* opacity: từ 0 -> 1 để nó hiện dần dần lên */
+    from {
+        opacity: 0; 
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}

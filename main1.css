@@ -168,4 +168,51 @@ html, body {
     height: var(--percent); /*chiều cao thì mình biến percent để biểu diễn độ cao của cột*/
     background-color: #EF5122;
     align-self: flex-end;
+    animation: growth ease-in 0.5s;
+}
+
+/*để các cột lớn lên 1 chút thì dùng pp sau*/
+@keyframes growth {
+    /* opacity: từ 0 -> 1 để nó hiện dần dần lên */
+    from {
+        opacity: 0; 
+        height: calc(var(--percent) - 50%);
+    }
+    to {
+        opacity: 1;
+        height: var(--percent);
+    }
+}
+
+.the-end {
+    margin: 12px auto 48px auto;
+    padding: 32px 0;
+    max-width: 740px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: row-reverse; /*đảo ngược lại*/
+}
+
+.the-end__first {
+    padding: 4px 16px;
+    background-color: #d8c4c4;
+    flex: 1;
+}
+
+.the-end__second {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-revese: đảo ngược 2 cái the end second */
+}
+
+.the-end__second-one {
+    flex: 1;
+    padding: 4px 16px;
+    background-color: #948787;
+}
+.the-end__second-two {
+    flex: 1;
+    padding: 4px 16px;
+    background-color: #fa9797;
 }
