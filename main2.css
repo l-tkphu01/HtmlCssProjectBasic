@@ -1,0 +1,28 @@
+/* BEM */
+.card {
+
+}
+
+.card--success .card__btn {
+    /* màu xanh */
+}
+
+.card--error .card__btn {
+    /* màu đỏ */
+}
+
+.card__heading {
+
+}
+
+.card__desc {
+
+}
+
+.card__btn {
+
+}
+
+.card__btn--size-s {
+    
+}

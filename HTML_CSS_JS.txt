@@ -395,7 +395,7 @@ code mẫu:
 - flex-basis: <length>
 + xét kích thước cho thk main size phụ thuộc trục chính (main axis)
 -----------------------------------------------------------------
-- justify-content (cha): flex-start | flex-end | center | space-between | space-around.
+- justify-content (cha): flex-start | flex-end | center | space-between(cách bên trong k cách bên lề) | space-around(cách bên lề = 1/2 lần bên trong) | space-evenly(cách bên trong và bên lề bằng nhau)
 -----------------------------------------------------------------
 + căng được những cái flex-item thoe phương hướng của main axis trái, phải, giữa.
 nếu nằm dọc: căng lên trên, giữa, xuống
@@ -404,6 +404,7 @@ nếu nằm dọc: căng lên trên, giữa, xuống
 + xét cha r thì k cần xét cho thk con.
 -----------------------------------------------------------------
 - align-content: flex-start | flex-end | center
++ dùng để xét thằng flex-item.
 + cùng phương hướng thk cross axis tương tự cách diễn giải thk justify-content
 + nếu cross axis nằm dọc thì: flex item xét lên trên, nằm giữa theo chiều ngang và xún dưới.
 + nếu cross axis nằm ngang thì: ngược lại.
@@ -449,3 +450,75 @@ can thiệp vào thì sử dụng: order
         height: var(--percent);
     }
 }
+
+-------------------------------------------------------------------------------------------------------------
+33. (Flexbox nâng cao)/ Liên hệ Flex model với các thuộc tính Flexbox trong CSS.
+- bổ sung cách để nhận diện những flex có thể dùng cho thằng nào: rõ nét nhất, khó chết mịa luôn.
+*Luôn luôn nhớ: chúng ta chỉ là hạt cát trên sa mạc cằn cõi thôi.
+- 2 thành phần chính: flex-container, flex-item
+flex-item: phụ thuộc vào trục main-axis.
+main axis: đếm từ trái va phải.
+
+-------------------------------------------------------------------------------------------------------------
+34. liên hệ flexbox model các thuộc tính flexbox trong
+muốn di chuyển 3 ông item sát lên trên đầu trục cross axis
+sử dụng cross-axis.
+
+
+- nhầm lẫn justify-content với lại align-item để căn trái, phải, giữa.
++ main axis: justify-content.
++ cross axis: align-item.
+
+*TRANG WEB ĐỂ NHẬN BIẾT FLEXBOX:
+Flexbox-playground
+
+-------------------------------------------------------------------------------------------------------------
+35. CSS BEM LÀ GÌ? đặt tên css class theo tiêu chuẩn BEM.
+#BEM: TIÊU CHUẨN BEM (QUAN TRỌNG CHO MẤY THẰNG GÀ LẬP TRÌNH).
+- là tiêu chuẩn đặt tên class khi viết CSS
+
+## ý nghĩa:
+- viết tắt của: BLock Element Modifier
+- Block: Khối(tạo thẻ cha trước)
+- Element: Thành phần trong khối. (thẻ con)
+(sau khi mà có 2 thằng bl và ele thì để hiểu hơn ý nghĩa gì thì thêm modifier bằng cách thêm class vào bl và ele để biểu diễn nghĩa)
+- Modifier: bổ sung ý nghĩa cho 'Block' hoặc 'Element'(ví dụ như biểu hiện ý nghĩa thành công hay thất bại)
+
+## Tại sao phải dùng BEM?
+- Mỗi người đặt một kiểu.
+- Members đặt class trùng nhau, CSS đè lên nhau.
+
+## Cú pháp:
+- .block (thể hiện class trong block)
+- .block__element (thể hiện ele và thẻ chứa nó)
+
+- .block--modifier (dùng class cho thk block)
+- .block__element--modifier. (dùng class cho thk block chứa element)
+
+## Tính ứng dụng: 
+- Xây dựng layout website.
+- xây dựng thành phần trên website.
+
+## Ưu điểm:
+- tính rõ ràng
+- tái sử dụng dễ dàng (kh bao h sợ trùng class)
+- giúp cả team làm việc với nhau dễ dàng.
+- tính module, không lo CSS của class này ảnh hưởng lên CSS của class khác.
+
+## Nhược điểm:
+- Tên class dài
+- Một số người cho là xấu
+
+## Khi nào dùng BEM là phù hợp?
+- dự án nhiều Members
+- Dự án lớn, số lượng pages nhiều hoặc số lượng các thành phần trên giao diện nhiều
+
+## Thực hành:
+- làm button
+    - Enabled: Pointer, hover effect.
+    - Disabled: Arrow, no effect. 
+- làm message
+- làm 1 thành phần trên website.
+
+-------------------------------------------------------------------------------------------------------------
+36. sử dụng BEM để tạo buttons (ứng dụng của BEM trong CSS).
