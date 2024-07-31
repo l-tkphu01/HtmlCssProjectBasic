@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh; Đảm bảo chiều cao của phần tử cha
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+
+}
+
+body > div {
+    margin: auto;
+}
+
+/* Block */
+.btn {
+    display: inline-block; /* Đảm bảo kích thước của các nút */
+    text-decoration: none;
+    background-color: transparent;
+    border: none; /*bỏ khung ngoài bao viền button */
+    outline: none;
+    color: #fff;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+    align-content: space-around;
+    min-width: 140px; /*nhỏ nhất là 140px*/ 
+}
+
+.btn--size-l {
+    padding: 16px 50px;
+}
+.btn--size-s {
+    padding: 10px 30px;
+}
+}
+.btn:hover {
+    opacity: 0.8;
+} 
+/* nếu 2 nút cạnh nhau ta sử dụng thuộc tính này: sẽ CSS cho 2 btn ở đằng sau đứng cạnh thằng trước */
+.btn + .btn { 
+    margin-left: 16px;
+}
+.btn--success {
+    background-color: #71be34;
+}
+
+.btn--warn {
+    background-color: #ffb702;
+}
+
+.btn--danger {
+    background-color: #ff623d;
+}
+
+.btn--disabled {
+    opacity: 0.5 !important;
+    /* để bỏ pointer */
+    cursor: default;
+}

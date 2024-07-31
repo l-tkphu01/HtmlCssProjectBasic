@@ -522,3 +522,42 @@ Flexbox-playground
 
 -------------------------------------------------------------------------------------------------------------
 36. sử dụng BEM để tạo buttons (ứng dụng của BEM trong CSS).
+
+*Một số lưu ý để nhớ khi code:
+- text-decoration: none; (bỏ dấu gạch ngang , trang trí trên văn bản).
+- text-decoration: underline; (gạch dưới văn bản)
+- text-decoration: overline; (gạch chân phía trên của văn bản)
+- text-decoration: line-through; (gạch ngang văn bản, (còn được gọi là strike-through)
+
+-------------------
+display: inline-block;
+- inline: sẽ được hiển thị trên cùng 1 dòng với các phần tử khác, giống như một phần tử 'inline'.
+- block: có chiều rộng và chiều cao tùy chỉnh (thiết lập với thuộc tính width và height), và các thuộc tính margin, padding
+có thể được áp dụng xung quanh nó, tương tự như phần tử 'block'(như '<div>' or '<p>')
+- background-color: transparent; (màu trong khung button trong suốt).
+- border-radius: 50px; bo tròn các góc với khẩu độ là 50px.
+
+-------------------
+-/* nếu 2 nút cạnh nhau ta sử dụng thuộc tính này: sẽ CSS cho 2 btn ở đằng sau đứng cạnh thằng trước chỉ áp dụng cho 2 thằng sau nhìn thấy thk trước th */
+.btn + .btn { 
+    margin-left: 16px;
+}
+
+- Enabled: (nút có thể bấm vào được)
+Pointer: con trỏ (sử dụng câu lệnh: cursor: pointer; mục đích: để hiện thị bàn tay)
+hover effect: (giảm đi màu sắc khi de chuột vào)
+câu lệnh: .btn:hover {
+            opacity: 0.8;
+        }
+- transition: opacity 0.2s ease; (hiệu ứng cho thằng opacity)
+
+- .btn--disabled: một khi có nút này thì không thể bấm được nữa.
+code: 
+.btn--disabled {
+    opacity: 0.5 !important;
+    /* để bỏ pointer */
+    cursor: default;
+}
+
+- min-width: xét chìu ngang nhỏ nhất
+- max-height: chiều cao lớn nhất
