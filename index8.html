@@ -3,30 +3,88 @@
     <head>
         <meta charset="utf-8">
         <title>BEM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
 
-        <div>
-            <!-- btn--disabled: khi có nút này  khi bâm vào được nữa  -->
+        <!-- <div>
+            btn--disabled: khi có nút này  khi bâm vào được nữa 
             <button class="btn btn--size-s btn--success">GO TO NEXT APPROVAL</button>  
             <button class="btn btn--size-s btn--warn">OK</button>  
             <button class="btn btn--size-s btn--danger">TRY AGAIN</button> 
         </div>
 
         <div>
-            <!-- btn--disabled: khi có nút này  khi bâm vào được nữa  -->
+            btn--disabled: khi có nút này  khi bâm vào được nữa.
             <button class="btn btn--success">GO TO NEXT APPROVAL</button>  
             <button class="btn btn--warn">OK</button>  
             <button class="btn btn--danger">TRY AGAIN</button> 
         </div> 
 
         <div>
-            <!-- btn--disabled: khi có nút này  khi bâm vào được nữa  -->
+            btn--disabled: khi có nút này  khi bâm vào được nữa 
             <button class="btn btn--size-l btn--success">GO TO NEXT APPROVAL</button>  
             <button class="btn btn--size-l btn--warn">OK</button>  
             <button class="btn btn--size-l btn--danger">TRY AGAIN</button> 
-        </div> 
+        </div>  -->
+<!-- success -->
+        <div>
+            <div class="toast"> <!--block-->
+                <div class="toast__icon"> <!--block__element-->
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Success</h3>
+                    <p class="toast__msg">đúng ròi nha em! Kim Phú đẹp trai nhất, ai không biết thằng đó ngu</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </div>
+
+<!-- Info -->
+            <div class="toast"> <!--block-->
+                <div class="toast__icon"> <!--block__element-->
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Info</h3>
+                    <p class="toast__msg">đúng ròi nha em! Kim Phú đẹp trai nhất, ai không biết thằng đó ngu</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </div>
+
+<!-- Warning -->
+            <div class="toast"> <!--block-->
+                <div class="toast__icon"> <!--block__element-->
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Warning</h3>
+                    <p class="toast__msg">đúng ròi nha em! Kim Phú đẹp trai nhất, ai không biết thằng đó ngu</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </div>
+
+<!-- error -->
+            <div class="toast"> <!--block-->
+                <div class="toast__icon"> <!--block__element-->
+                    <i class="fa-regular fa-circle-check"></i>
+                </div>
+                <div class="toast__body">
+                    <h3 class="toast__title">Error</h3>
+                    <p class="toast__msg">đúng ròi nha em! Kim Phú đẹp trai nhất, ai không biết thằng đó ngu</p>
+                </div>
+                <div class="toast__close">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,12 +1,12 @@
 * {
-    padding: 0;
+    padding: 0;  /*lớp đệm có chức năng làm dày cộm lên phần item */ 
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 100vh; Đảm bảo chiều cao của phần tử cha
+    height: 100vh; /*Đảm bảo chiều cao của phần tử cha*/
     flex-direction: column;
     font-family: "Helvetica Neue";
 
@@ -38,7 +38,7 @@ body > div {
 .btn--size-s {
     padding: 10px 30px;
 }
-}
+
 .btn:hover {
     opacity: 0.8;
 } 
@@ -62,4 +62,43 @@ body > div {
     opacity: 0.5 !important;
     /* để bỏ pointer */
     cursor: default;
+}
+
+
+.toast {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+}
+
+.toast__icon {
+    padding: 0 16px;
+    font-size: 24px;
+}
+
+.toast__body {
+
+}
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.toast__close {
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.toast + .toast {
+    margin-top: 24px;
 }

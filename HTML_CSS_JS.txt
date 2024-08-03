@@ -559,5 +559,24 @@ code:
     cursor: default;
 }
 
-- min-width: xét chìu ngang nhỏ nhất
-- max-height: chiều cao lớn nhất
+- min-width: xét chìu ngang nhỏ nhất.
+- max-height: chiều cao lớn nhất.
+
+------------------------------------------------------------------------------------------------
+37. Sử dụng BEM tạo Toast Message UI: hiện thông báo ngắn gọn và tạm thời hiển thị trên giao diện người dùng trong các ứng 
+dụng di động và web. trược từ góc màn hình vào và sau và giây nó lại ẩn đi or có dấu x nhấn dô nó sẽ ẩn đi.
+
+- cách tìm icon đúng sai.
+search: font awesome cdn sau đó vào fontwesome.com/icon
+- border-radius: 2px; (để tạo góc bo tròn cho các phần tử html)
+- border-left: 4px solid; (solid: tạo nét liền phía bên trái).
+- box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08); trong CSS được sử dụng để thêm một bóng đổ (shadow) cho phần tử HTML.
+Ý nghĩa cụ thể của từng giá trị là:
+1/ 0: Giá trị đầu tiên là offset-x, chỉ định khoảng cách của bóng đổ theo chiều ngang. Giá trị 0 nghĩa là bóng đổ sẽ không di chuyển theo chiều ngang, nằm ngay dưới phần tử.
+2/ 5px: Giá trị thứ hai là offset-y, chỉ định khoảng cách của bóng đổ theo chiều dọc. Ở đây, 5px nghĩa là bóng đổ sẽ được đặt cách phần tử 5 pixel theo chiều dọc, xuống phía dưới.
+3/ 8px: Giá trị thứ ba là blur-radius, chỉ định độ mờ của bóng đổ. 8px nghĩa là bóng sẽ có một độ mờ tương đối lớn, làm cho bóng đổ trông mềm mại và mờ hơn.
+4/ rgba(0, 0, 0, 0.08): Giá trị cuối cùng là màu sắc của bóng đổ, sử dụng định dạng rgba (red, green, blue, alpha). Ở đây, màu đen (rgb(0, 0, 0)) với độ trong suốt 0.08, làm cho bóng đổ trông rất nhạt và mờ.
+
+-  font-size: 24px; (làm tăng cỡ chữ, icon...)
+
+- font-weight: 600; (thiết lập độ dày của phong chữ).
