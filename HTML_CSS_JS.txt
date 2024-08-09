@@ -577,6 +577,16 @@ search: font awesome cdn sau đó vào fontwesome.com/icon
 3/ 8px: Giá trị thứ ba là blur-radius, chỉ định độ mờ của bóng đổ. 8px nghĩa là bóng sẽ có một độ mờ tương đối lớn, làm cho bóng đổ trông mềm mại và mờ hơn.
 4/ rgba(0, 0, 0, 0.08): Giá trị cuối cùng là màu sắc của bóng đổ, sử dụng định dạng rgba (red, green, blue, alpha). Ở đây, màu đen (rgb(0, 0, 0)) với độ trong suốt 0.08, làm cho bóng đổ trông rất nhạt và mờ.
 
--  font-size: 24px; (làm tăng cỡ chữ, icon...)
-
+- font-size: 24px; (làm tăng cỡ chữ, icon...)
 - font-weight: 600; (thiết lập độ dày của phong chữ).
+- boder-color: (làm cho thanh boder có màu sắc.)
+- line-height: 1.6; (là một thuộc tính trong CSS được sử dụng để điều chỉnh khoảng cách giữa các dòng trong một đoạn văn bản.)
+
+- để chuyển sang góc phải ở trên thì sử dụng: 
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+}
+
+Thuộc tính transform: translateX(calc(100% + 32px)); trong CSS được sử dụng để dịch chuyển một phần tử theo chiều ngang (trục X) dựa trên một giá trị tính toán kết hợp giữa phần trăm (%) và đơn vị pixel (px).
