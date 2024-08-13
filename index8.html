@@ -57,5 +57,32 @@
                 </div>
             </div>
         </div>
+
+        <div>
+            <div class="btn btn--success">Show success toast</div>
+            <div class="btn btn--danger">Show danger toast</div>
+        </div>
+
+        <script>
+            // toast function
+            function toast ({ 
+                title = '',
+                message = '',
+                type = 'info',
+                duration = 3000
+            }) {
+                const main = document.getElementById('toast');
+                if (main) {
+                    const toast = document
+                }
+            }
+
+            toast({
+                title: 'Success',
+                message: 'đúng ròi nha em! Kim Phú đẹp trai nhất, ai không biết thằng đó ngu',
+                type: 'success', 
+                duration: 3000
+            })
+        </script>
     </body>
 </html>

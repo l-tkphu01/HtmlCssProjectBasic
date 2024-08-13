@@ -590,3 +590,26 @@ search: font awesome cdn sau đó vào fontwesome.com/icon
 }
 
 Thuộc tính transform: translateX(calc(100% + 32px)); trong CSS được sử dụng để dịch chuyển một phần tử theo chiều ngang (trục X) dựa trên một giá trị tính toán kết hợp giữa phần trăm (%) và đơn vị pixel (px).
+----------------------
+- Hiệu ứng animation trượt từ phải vào:
+vd: 
+@keyframes slideInleft {
+    from {
+        opacity: 0; //đầu tiên phần tử sẽ trong suốt.
+        transform:translateX(calc(100% + 32px)); //dịch theo chiều từ phải vào.
+    }
+    to {
+        opacity: 1; //phần tử sẽ hoàn toàn hiển thị.
+        transform: translateX(0);
+    }
+}
+- kèm theo hiệu ứng quay trở lại trạng thái ban đầu.
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+- câu lệnh để thêm vào mảng chính:
+animation: slideInleft ease .3s /*tốc độ đi ra từ phải ra*/, fadeOut linear 1s 3s (mờ dần từ 1 -> 3s) forwards (dừng lại điểm cuối của animation);
