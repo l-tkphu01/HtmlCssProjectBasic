@@ -613,3 +613,7 @@ vd:
 
 - câu lệnh để thêm vào mảng chính:
 animation: slideInleft ease .3s /*tốc độ đi ra từ phải ra*/, fadeOut linear 1s 3s (mờ dần từ 1 -> 3s) forwards (dừng lại điểm cuối của animation);
+
+---------------------------------
+- bắt đầu code dự án: file base là code những cấu hình chung
+main là code những thành phân riêng.
