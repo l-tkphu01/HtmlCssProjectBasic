@@ -1,0 +1,45 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit; /*box-sizing: trong css xác định kích thước của 1 phần tử được tính toán, include chiều rộng và chiều cao của phần tử
+    giá trị: interit sẽ kế thừa giá trị của thuộc tính 'box-sizing' từ phần tử cha.
+    */    
+}
+
+html {
+    /* HACK */
+    /* mặc định 100%: 16px*/
+    font-size: 62.5%;
+    /* độ cao chữ mặc định của website. */
+    line-height: 1.6rem; /*thằng nào có độ cao khác nhau thì sẽ có css khác nhau.*/
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1400px; /*nếu thêm > 1200px thì nó sẽ co nhỏ lại và cách ra 2 khoảng đầu*/
+    /*chiều ngang tối đa là 100%*/
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+/* trường hợp kh để width là 1200px. */
+.grid__full-width {
+    width: 100%;
+}
+
+/*những thằng nằm trên class này sẽ nằm trên 1 hàng ngang*/
+.grid__row {
+    display: flex;
+    flex-wrap: wrap; /*wrap-reverse */
+}
+
+p {
+    /* 1rem sẽ phụ thuộc vào thẻ html.
+    vd: đơn vị rem tương ứng 12px: đổi font-size html sang 62,5 -> 1rem = 10px*/
+    font-size: 1.2rem;
+}

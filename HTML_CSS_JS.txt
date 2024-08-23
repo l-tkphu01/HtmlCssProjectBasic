@@ -524,6 +524,7 @@ Flexbox-playground
 36. sử dụng BEM để tạo buttons (ứng dụng của BEM trong CSS).
 
 *Một số lưu ý để nhớ khi code:
+- list-style: none; (loại bỏ dấu gạch ngang).
 - text-decoration: none; (bỏ dấu gạch ngang , trang trí trên văn bản).
 - text-decoration: underline; (gạch dưới văn bản)
 - text-decoration: overline; (gạch chân phía trên của văn bản)
@@ -617,3 +618,26 @@ animation: slideInleft ease .3s /*tốc độ đi ra từ phải ra*/, fadeOut l
 ---------------------------------
 - bắt đầu code dự án: file base là code những cấu hình chung
 main là code những thành phân riêng.
+---------------------------------
+- Reset CSS và sử dụng Reset CSS: khi chưa CSS thì nó sẽ mặc đinh là 8 pixel, mỗi trình duyệt nó sẽ khác nhau, nên khi code thì sử dụng CSS để chúng có quy chuẩn.
+- normalize: giao diện reset css.(css lại các giao diện thẻ html trở lại mặc định).
++ có chức năng là: cho chúng ta biết được các giao diện tùy chọn có trên giao diện wed của chúng ta.
+---------------------------------
+42. Dựng CSS base | thực hành xây dựng Base CSS cho website.
+1rem = 62.5% = 10px tương tự 1.2 = 12px
+-------
+cách để chỉnh font chữ: google roboto font.
+---------------------------------
+43. Dựng khung web | tạo layout cho web.
+- đầu tiên: làm thẻ chứa toàn bộ web-site
+- tiếp theo: navbar -> header -> container -> footer
+---------------------------------
+44.
+html: 
+display: block; giúp đặt được chiều ngang chiều dọc trong css, giúp kế thừa chiều ngang của thẻ chứa nó.
+- để mất đi chấm chấm đen đen ở trước của các item: list-style: none;
+- display: inline-block; giữ lại thuộc tín block nhưng nằm trên 1 hàng. (sử dụng khi có nhiều phần tử với nhau).
+- display: flex; sử dụng khi để tất cả các phần tử nằm trên cùng 1 hàng.
+- nhấn nút: alt và nút tiến để đưa phần tử vào trong class.
+- cách để tách tất cả các chữ đều nhau dùng: margin.
+- cách làm gách ngang giữa 2 chữ: 

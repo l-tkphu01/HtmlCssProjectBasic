@@ -1,0 +1,41 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(0, #fe6433, #f53e2d);
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0; /* bỏ đi giá trị mặc định của trang web là padding-left: 40px;*/
+}
+
+.header__navbar-item {
+    margin: 0 8px;
+}
+
+.header__navbar-item,
+.header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.4rem; /*tương ứng 14px bởi vì 1rem = 62.5% = 10px*/
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 300;
+}
+
+.header__navbar-item--strong {
+font-weight: 400;
+}
+
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 12px;
+    right: 0;
+    top: 0;
+}
