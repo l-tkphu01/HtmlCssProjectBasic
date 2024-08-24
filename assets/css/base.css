@@ -24,7 +24,7 @@ html {
     width: 1400px; /*nếu thêm > 1200px thì nó sẽ co nhỏ lại và cách ra 2 khoảng đầu*/
     /*chiều ngang tối đa là 100%*/
     max-width: 100%; 
-    margin: 0 auto;
+    margin: 0 auto; /*căng giữa nhờ thuộc tính margin: 0 auto;*/
 }
 
 /* trường hợp kh để width là 1200px. */

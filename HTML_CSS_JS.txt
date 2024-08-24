@@ -640,4 +640,32 @@ display: block; giúp đặt được chiều ngang chiều dọc trong css, gi�
 - display: flex; sử dụng khi để tất cả các phần tử nằm trên cùng 1 hàng.
 - nhấn nút: alt và nút tiến để đưa phần tử vào trong class.
 - cách để tách tất cả các chữ đều nhau dùng: margin.
-- cách làm gách ngang giữa 2 chữ: 
+- khi chưa css: padding-left thì mặc định nó sẽ cách phía bên trái 40px.
+- cách làm gách ngang giữa 2 chữ:
+--------
+- chức năng grid { mặc định chiều ngang của nó là 1200px nếu màn hình lớn hơn thì nó sẽ thụt vào phía bên trong.
+                width: 1400px; /*nếu thêm > 1200px thì nó sẽ co nhỏ lại và cách ra 2 khoảng đầu*/
+                /*chiều ngang tối đa là 100%*/
+                max-width: 100%; 
+                margin: 0 auto;
+}
+- margin: 0 auto; giúp căng giữa các item với nhau.
+--------
+ĐỂ LÀM GẠCH NGANH "|" GIỐNG TRÊN SHOPEE THÌ SỬ DỤNG THUỘC TÍNH SAU ĐÂY.
+- đầu tiên vào thẻ <li> vào cửa hàng </li> thêm vào 1 cái monifier.
+code web:
+.header__navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px; /*cách 1 để tạo ra thanh gạch | */
+    height: 12px; /*kích thước chìu dọc của thanh là 12px*/
+    background-color: #fb9086;
+    /* border-left: 1px solid #fb9086;  //cách 2 để tạo gạch ngang. */
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%); /*điều này có nghĩa là giảm kích thước chiều cao đi còn 6px.*/
+    /* lưu ý: 1 Bem có thể chèn nhìu monifier vào trong nhá*/
+}
+----------------------------------
+45. Nhúng Font-Icons | Hướng dẫn sử dụng thư viện Font Awesome

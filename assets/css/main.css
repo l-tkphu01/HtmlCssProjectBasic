@@ -14,7 +14,8 @@
 }
 
 .header__navbar-item {
-    margin: 0 8px;
+    margin: 0 8px; /*giúp tách chữ của các item ra cho nó đẹp.*/ 
+    position: relative;
 }
 
 .header__navbar-item,
@@ -26,16 +27,19 @@
     font-weight: 300;
 }
 
-.header__navbar-item--strong {
-font-weight: 400;
+.header__navbar-item--strong { /*tiêu chuẩn Bem: block_element--monifier*/
+    font-weight: 400;
 }
 
 .header__navbar-item--separate::after {
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid #FB9086;
-    height: 12px;
-    right: 0;
-    top: 0;
+    width: 1px; /*cách 1 để tạo ra thanh gạch | */
+    height: 12px; /*kích thước chìu dọc của thanh là 12px*/
+    background-color: #fb9086;
+    /* border-left: 1px solid #fb9086;  //cách 2 để tạo gạch ngang. */
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%); /*điều này có nghĩa là giảm kích thước chiều cao đi còn 6px.*/
 }
