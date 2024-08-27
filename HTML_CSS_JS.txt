@@ -669,3 +669,10 @@ code web:
 }
 ----------------------------------
 45. Nhúng Font-Icons | Hướng dẫn sử dụng thư viện Font Awesome
+- thư viện: Font Awesome.
+- di chuột vào làm mờ đi: 
+.header__navbar-item:hover,
+.header__navbar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+-
