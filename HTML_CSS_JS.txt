@@ -675,4 +675,8 @@ code web:
 .header__navbar-item-link:hover {
     color: rgba(255, 255, 255, 0.7);
 }
--
+- cursor: text; //bỏ đi bàn tay.
+
+----------------------------------
+47. Hướng dẫn css cho mã QR | Header QR code CSS.
+- cách để đo nội dung ẩn.

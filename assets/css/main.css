@@ -28,8 +28,18 @@
     font-weight: 300;
 }
 
+.header__navbar-item,
+.header__navbar-item-link,
+.header__navbar-icon-link,
+.header__navbar-item--strong {
+    /* display: inline-flex;  */
+    /*mục đích để icon và chữ nằm ở trên một hàng ngang.*/
+    align-items: center;
+    text-decoration: none;
+}
 .header__navbar-item:hover,
-.header__navbar-item-link:hover {
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover { /*hover: giúp bạn có thể thay đổi màu sắc khi di chuyển chuột vào nó.*/
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -48,4 +58,19 @@
     right: -10px;
     top: 50%;
     transform: translateY(-50%); /*điều này có nghĩa là giảm kích thước chiều cao đi còn 6px.*/
+}
+
+.header__navbar-icon-link,
+.header__navbar-item-link {
+    color: #fff;
+    margin-top: 1px;
+}
+
+.header__navcar-icon {
+    font-size: 1.8rem;
+    margin: 0px 4px;
+}
+
+.header__navbar-item-title--no-poiter {
+    color: var(--white-color)
 }
