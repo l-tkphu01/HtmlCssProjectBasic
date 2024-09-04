@@ -680,3 +680,6 @@ code web:
 ----------------------------------
 47. Hướng dẫn css cho mã QR | Header QR code CSS.
 - cách để đo nội dung ẩn.
+
+.header__qr-link:first-child { /*css cho thành phần đầu tiên*/
+hoặc: .header__qr-link:nth-child(1) { /*css cho thành phần đầu tiên*/
