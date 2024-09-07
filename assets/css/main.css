@@ -96,6 +96,7 @@
     padding: 5px;
     border-radius: 2px;
     display: none; /*ẩn Qr khỏi layout, cần phải viết thêm lớp giả hover.*/
+    margin-top: -13px;
 }
 
 .header__qr-img {
