@@ -91,12 +91,12 @@
     width: 186px;
     background-color: var(--white-color);
     position: absolute;
-    left: 0px;
-    top: 43px;
-    padding: 5px;
+    left: 0;
+    top: 140%;
+    padding: 8px;
     border-radius: 2px;
     display: none; /*ẩn Qr khỏi layout, cần phải viết thêm lớp giả hover.*/
-    margin-top: -13px;
+    /* margin-top: -13px */ 
 }
 
 .header__qr-img {
