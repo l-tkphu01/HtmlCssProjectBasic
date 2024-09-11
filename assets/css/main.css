@@ -97,7 +97,20 @@
     border-radius: 2px;
     display: none; /*ẩn Qr khỏi layout, cần phải viết thêm lớp giả hover.*/
     /* margin-top: -13px */ 
+    animation: fadeIn ease-in 0.2s;
 }
+
+.header_qr::before { /*tạo một lớp mói bằng lớp QR để thực hiện bắt cầu*/
+    position: absolute; /*lớp màu trắng hiện ra trên website khi chúng ta dí chuột.*/
+    left: 0;
+    top: -15px;
+    width: 100%; /*chiều ngang bằng chính thằng QR*/
+    height: 20px;
+    content: "";
+    display: block;
+    /* background-color: red; thành trong suốt */
+}
+
 
 .header__qr-img {
     width: 100%;

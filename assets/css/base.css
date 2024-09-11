@@ -43,3 +43,13 @@ p {
     vd: đơn vị rem tương ứng 12px: đổi font-size html sang 62,5 -> 1rem = 10px*/
     font-size: 1.2rem;
 }
+
+/*Animation*/
+@keyframes fadeIn { /* chuyển động*/
+    from {
+        opacity: 0; /*độ trong suốt = 0 để bé ns ẩn đi*/
+    }
+    to {
+        opacity: 1;
+    }
+}

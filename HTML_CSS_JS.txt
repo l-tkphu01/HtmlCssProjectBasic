@@ -683,3 +683,30 @@ code web:
 
 .header__qr-link:first-child { /*css cho thành phần đầu tiên*/
 hoặc: .header__qr-link:nth-child(1) { /*css cho thành phần đầu tiên*/
+----------------------------------
+47.
+để nối 2 cái Variable lại với nhau thì sử dụng thuộc tích ::before {}
+vd: 
+.header_qr::before { /*tạo một lớp mói bằng lớp QR để thực hiện bắt cầu*/
+    position: absolute; /*lớp màu trắng hiện ra trên website khi chúng ta dí chuột.*/
+    left: 0;
+    top: -15px;
+    width: 100%; /*chiều ngang bằng chính thằng QR*/
+    height: 20px;
+    content: "";
+    display: block;
+    /* background-color: red; thành trong suốt */
+}
+---> tạo 1 khuôn mới có chiều ngang = với QR và chiều dọc 20px.
+
+-----------------------
+/*Animation*/
+@keyframes fadeIn { /* chuyển động*/
+    from {
+        opacity: 0; /*độ trong suốt = 0 để bé ns ẩn đi*/
+    }
+    to {
+        opacity: 1;
+    }
+}
+thực hành: animation: fadeIn ease-in 0.2s; // 0.2s là thời gian phản hồi
