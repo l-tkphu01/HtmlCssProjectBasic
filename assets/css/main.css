@@ -97,7 +97,7 @@
     border-radius: 2px;
     display: none; /*ẩn Qr khỏi layout, cần phải viết thêm lớp giả hover.*/
     /* margin-top: -13px */ 
-    animation: fadeIn ease-in 0.2s;
+    animation: fadeIn ease-in 0.25s;
 }
 
 .header_qr::before { /*tạo một lớp mói bằng lớp QR để thực hiện bắt cầu*/
