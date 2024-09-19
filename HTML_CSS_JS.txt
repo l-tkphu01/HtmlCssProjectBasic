@@ -712,3 +712,59 @@ vd:
 thực hành: animation: fadeIn ease-in 0.2s; // 0.2s là thời gian phản hồi
 
 ------------------------
+- Miếng boder đệm bao quanh bên ngoài:
+vd: 
+border: 1px solid #D3D3D3;
+------------------------
+- muốn để 2 thằng cùng có khai báo là span cùng xuống dòng thì sử dụng: display: block; cho từng thằng.
+- để ảnh kh bị méo: object-fit: contain;
+- di chuột vào nó sẽ đổi từ màu đậm sang nhạt hơn: 
+code: 
+.header__notify-item::hover {
+    background-color: #f1f1f1;
+}
+-------------------------
+//màu nhạt hơn.
+color: var(--text-color);
+-------------------------
+//chiều cao dòng của nó:
+line-height: 1.4rem; (rem: pixel) để điều chỉnh một dòng sao cho độ rộng khoảng cách dòng xuống hàng nhỏ hoặc lớn.
+-------------------------
+nếu muốn tràng viền luôn thì use: weight: 100%.
+nếu muốn căn chỉnh nằm giữa: display: flex; và dùng thuộc tính: text-align: center;
+cách thứ 2: display: flex;  và dùng: justify-contain: center;
+-------------------------
+cursor: text; (kh hiện ra con trỏ chuộc nữa mà hiện chữ I mục đích dùng để bôi đen copy)
+để bình thường chỉ hiển thị chuột: user-select: none;
+-------------------------
+di chuột vào hiện ra (animation).
+-------------------------
+/* thuộc tính: transform-origin: để di chuyển độ nở của item*/
+    transform-origin: top right;
+    transform-origin: 90% right;
+
+-------------------------
+
+/*animation cho phần thông báo*/
+@keyframes fadeIine { /* chuyển động*/
+    from {
+        opacity: 0; // mờ từ từ lên.
+        transform: scale(0); /*độ trong suốt = 0 để bé ns ẩn đi*/
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+----------------------------
+Design: arrow.
+cách làm: 
+- chỉ cần tạo ra 1 thẻ html kh cao dài = 0 và cho boder dày lên.
+- tese chức năng: jsfiddle.net
+----------------------------
+- CÁC CHỨC NĂNG CĂN GIỮA:
+(display: flex).
+margin: auto;
+justify-content: center;
+text-align: center;
+display: block;

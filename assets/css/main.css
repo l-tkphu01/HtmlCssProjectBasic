@@ -12,6 +12,7 @@
     list-style: none;
     padding-left: 0; /* bỏ đi giá trị mặc định của trang web là padding-left: 40px;*/
     margin-top: 4px;
+    line-height: 25px;
 }
 
 .header__navbar-item {
@@ -27,6 +28,9 @@
     text-decoration: none;
     color: var(--white-color);
     font-weight: 300;
+}
+.header__navbar-item-link:hover .header__notify {
+    display: block; /*hiển thị dạng khối*/
 }
 
 .header__navbar-list,
@@ -64,6 +68,11 @@
 
 .header__navbar-item--has-qr:hover .header_qr { /*thẻ header_qr là thẻ con của header__navbar-item--has-qr*/
     display: block; /*hiển thị dạng khối*/
+}
+
+/*lớp giả: hover để css cho phần thông báo*/
+.header__navcar-icon--has-notify:hover .header__notify {
+    display: block;
 }
 
 .header__navbar-icon-link,
@@ -111,7 +120,6 @@
     /* background-color: red; thành trong suốt */
 }
 
-
 .header__qr-img {
     width: 100%;
 }
@@ -135,4 +143,131 @@
 .header__qr-link:nth-child(2) {
     margin-right: 11px;
 
+}
+
+
+/* CSS cho phần thông báo. */
+
+.header__notify {
+    position: absolute; /*lớp màu trắng hiện ra trên website khi chúng ta dí chuột*/
+    top: 118%;
+    width: 404px;
+    background-color: var(--white-color);
+    right: 1px;
+    border: 1px solid #D3D3D3;
+    display: none;
+    animation: fadeIine ease-in 0.2s;
+    /* thuộc tính: transform-origin: để di chuyển độ nở của item*/
+    transform-origin: 90% top;
+    border-radius: 2px;
+}
+
+.header__notify::before {
+    content: "";
+    border-width: 20px 27px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent; /* trên, phải dưới trái*/
+    position: absolute;
+    right: 4px;
+    top: -29px;
+}
+
+.header__notify::after { /*tạo một lớp mói bằng lớp QR để thực hiện bắt cầu*/
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 17px;
+    right: 0;
+    top: -15px;
+    background-color: transparent;
+    /* background-color: red; thành trong suốt */
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+    padding: 12px;
+}
+
+.header__notify-header h3 {
+    color: #999;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    cursor: text;
+    /*để bình thường kh cho cop lun*/
+    /* user-select: none;  */
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {
+    display: flex;
+}
+.header__notify-item:hover {
+    background-color: #f0e7e7;
+}
+
+.header__notify-item--viewed { /*đã đọc*/
+    background-color: rgba(238, 75, 43, 0.09);
+}
+.header__notify-link {
+    display: flex;
+    text-decoration: none;
+    width: 100%; /*để màu bao trùm hết phần (header__notify)*/    
+}
+
+.header__notify-info {
+    align-content: space-around;
+    font-weight: 400;
+}
+
+.header__notify-img {
+    width: 48px;
+    padding: 12px;
+    object-fit: contain;
+
+}
+.header__notify-name {
+    display: block;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+.header__notify-description {
+    display: block;
+    font-size:12px;
+    color: #888;
+    line-height: 1.8rem;
+    margin-top: 3px;
+}
+
+.header__notify-footer {
+    display: flex;
+}
+
+.header__notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    width: 100%;
+    padding: 9px 0px; /*tăng độ rộng khả năng chi cập của người dùng*/
+    font-weight: 550;
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+}
+
+/*animation cho phần thông báo*/
+@keyframes fadeIine { /* chuyển động*/
+    from {
+        opacity: 0;
+        transform: scale(0); /*độ trong suốt = 0 để bé ns ẩn đi*/
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
