@@ -585,7 +585,7 @@ search: font awesome cdn sau đó vào fontwesome.com/icon
 
 - để chuyển sang góc phải ở trên thì sử dụng: 
 #toast {
-    position: fixed;
+    position: fixed; //khi kéo lên xuống header đứng yên.
     top: 32px;
     right: 32px;
 }
@@ -768,3 +768,57 @@ margin: auto;
 justify-content: center;
 text-align: center;
 display: block;
+
+----------------------------
+51. Làm giao diện đăng ký đăng nhập cho website | Base modal
+- lớp phủ phía bên ngoài màu đen và có thể nhìn thấy được bên trong: modal
++ thành phần chung: lớp màu đen đen, khung trắng.
++ thành phần riêng: là các cái chữ trong khung trắng có thể thay đổi.
++ muốn phần modal chiếm hết toàn bộ màn hình thì dùng đoạn code sau đây: 
+code: 
+.modal {
+    position: fixed; //khi kéo lên xuống header đứng yên.
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+thẻ thuộc tính: position: absolute; là thẻ con của thk cha (phụ thuộc vào thẻ chứa nó).
+vd: 
+.modal {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal__overlay {
+    position: absolute; //phụ thuộc toàn bộ vào thằng modal.
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);//để điều chỉnh màu sắc thì sử dụng rgba();
+}
+
+---------------------------
+Thuộc tính: 
+z-index: ; (số càng cao thì mức độ hiển thị so với mắt là tốt nhất);
++ dùng để biến thứ bị chìm sang nổi.
++ dùng: position: relative; (có chức năng kh phụ thuộc vào thằng nào hết);
+---------------------------
+thẻ: 
+<div class="auth-form__group">
+    <input type="text" class="auth-form__input" placeholder="">
+</div>
+--> placeholder: khi người dùng kh nhập nó sẽ hiện ra.
+---------------------------
+- để tránh lặp lại code: 
+- sử dụng :root {} trong html để giúp lưu trữ mã màu sau khi truy cập các thuộc tính: vd color: var(--text-color);
+- sử dụng rem: tăng tính linh hoạt, dễ dử dụng hơn px trong html
+- rem: font-size, line-height, letter-spacing, width, height, max-width,  min-width, min-height, min-height. 
+---------------------------
+- Giups người dùng có thể tập chung hơn trong việc viết code:
+.auth-form__input:focus {
+    border-color: #333;
+}
