@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .lantern {
+            width: 50px;
+            height: 100px;
+            background-color: yellow;
+            border-radius: 25px 25px 0 0;
+            position: absolute;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .lantern::before {
+            content: '';
+            width: 10px;
+            height: 20px;
+            background-color: white;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .lantern:nth-child(1) {
+            left: 20%;
+            animation-delay: 0s;
+        }
+
+        .lantern:nth-child(2) {
+            left: 50%;
+            animation-delay: 1s;
+        }
+
+        .lantern:nth-child(3) {
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chúc Mừng Năm Mới</h1>
+        <p>Chúc bạn một năm mới an khang thịnh vượng, vạn sự như ý!</p>
+    </div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+    <div class="lantern"></div>
+</body>
+</html>

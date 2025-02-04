@@ -1,33 +1,43 @@
 :root {
-    --primary-color: #ee4d2d; /*MÃ MÀU CHÍNH CỦA TRANG WEB*/
+    /*tham số chỉ định địa chỉ màu sắc*/
+    --primary-color: #ee4d2d;
+    /*MÃ MÀU CHÍNH CỦA TRANG WEB*/
     --primary-color-rgba: rgb(238, 75, 43);
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
     --border-color: #dbdbdb;
+    --star-gold-color: #FFCE3F;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
-    box-sizing: inherit; /*box-sizing: trong css xác định kích thước của 1 phần tử được tính toán, include chiều rộng và chiều cao của phần tử
+    box-sizing: inherit;
+    /*box-sizing: trong css xác định kích thước của 1 phần tử được tính toán, include chiều rộng và chiều cao của phần tử
     giá trị: interit sẽ kế thừa giá trị của thuộc tính 'box-sizing' từ phần tử cha.
-    */    
+    */
 }
 
 html {
     /* HACK */
     /* mặc định 100%: 16px*/
-    font-size: 62.5%; 
+    font-size: 62.5%;
     /* độ cao chữ mặc định của website. */
-    line-height: 1.6rem; /*thằng nào có độ cao khác nhau thì sẽ có css khác nhau.*/
+    line-height: 1.6rem;
+    /*thằng nào có độ cao khác nhau thì sẽ có css khác nhau.*/
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
 
+/* Responsive */
 .grid {
     width: 1400px; /*nếu thêm > 1200px thì nó sẽ co nhỏ lại và cách ra 2 khoảng đầu*/
     /*chiều ngang tối đa là 100%*/
-    max-width: 100%; 
-    margin: 0 auto; /*căng giữa nhờ thuộc tính margin: 0 auto;*/
+    max-width: 100%;
+    margin: 0 auto;
+    /*căng giữa nhờ thuộc tính margin: 0 auto; (trên dưới: 0), (phải trái: auto)*/
 }
 
 /* trường hợp kh để width là 1200px. */
@@ -38,49 +48,236 @@ html {
 /*những thằng nằm trên class này sẽ nằm trên 1 hàng ngang*/
 .grid__row {
     display: flex;
-    flex-wrap: wrap; /*wrap-reverse */
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    /*wrap-reverse */
 }
 
 p {
     /* 1rem sẽ phụ thuộc vào thẻ html.
-    vd: đơn vị rem tương ứng 12px: đổi font-size html sang 62,5 -> 1rem = 10px*/
+    vd: đơn vị rem tương ứng 5px: đổi font-size html sang 62,5 -> 1rem = 10px*/
     font-size: 1.2rem;
 }
 
+/* Test */
+.grid__column-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+
+.grid__column-2-4 { /* 1 1 sản phẩm sẽ chiếm 2.4 */
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.grid__column-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+
 /*Animation*/
-@keyframes fadeIn { /* chuyển động*/
+@keyframes fadeIn {
+
+    /* chuyển động*/
     from {
-        opacity: 0; /*độ trong suốt = 0 để bé ns ẩn đi*/
+        opacity: 0;
+        /*độ trong suốt = 0 để bé ns ẩn đi*/
     }
+
     to {
         opacity: 1;
     }
 }
 
+@keyframes growth { /*tên animation để sau này còn kế thừa lại.*/
+    from {
+        transform: scale(var(--growth-from));
+    }
 
-/* Button style: bởi vì file này dùng chung nên là viết vào hàm base. */ 
-.btn { 
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
+
+/* css modal layout */
+/* .modal {
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: fadeIn linear 0.1s;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    --growth-from: 0.7; 
+    --growth-to: 1;
+    width: 400px;
+    background-color: var(--white-color);
+    margin: auto;
+    position: relative; 
+    z-index: 1;
+    border-radius: 4px;
+    animation: growth linear 0.1s;
+} */
+
+/* Button style: bởi vì file này dùng chung nên là viết vào hàm base. */
+.btn {
     min-width: 142px;
     height: 36px;
     text-decoration: none;
     border: none;
     border-radius: 2px;
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 16px;
     background-color: var(--white-color);
-    outline: none; /* bỏ phần viền bao quanh button*/
+    outline: none; /*bỏ viền xung quanh*/
     cursor: pointer;
+    color: var(--text-color);
+    display: inline-block; 
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4rem; /*độ rộng or căn giữa dòng chữ.*/
 }
 
 /* một element có cả 2 class. */
-.btn.btn--primary { 
+.btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
 }
 
+/* vô hiệu hoá nút */
+.btn.btn--disabled {
+    cursor: default;
+    /*vô hiệu hoá nút*/
+    background-color: #7d7d7d;
+}
+
 .btn.btn--with-icon {
-    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    height: 0;
-    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    white-space: nowrap;
+}
+
+.btn.btn--facebook {
+    background-color: #3b5998; /* Màu nền Facebook */
+    color: #fff; /* Màu chữ Facebook */
+    padding: 0 16px;
+}
+
+.btn.btn--google {
+    background-color: #ffffff; /* Màu nền Google */
+    color: #000; /* Màu chữ Google */
+    padding: 0 16px;
+}
+
+.btn--facebook i {
+    margin-right: 15px;
+}
+
+.btn--google i {
+    margin-right: 25px;
+}
+
+/* selection */
+.select-input {
+    position: relative;
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.select-input__label {
+    font-size: 1.4rem;
+}
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: rgb(131, 131, 131);
+    position: relative;
+    top: 1px;   
+}
+
+.select-input__label-option {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 26px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    visibility: hidden; 
+}
+
+.select-input__label-option:hover {
+    color: var(--primary-color);
+}
+
+.select-input__link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    display: block;
+    padding: 4px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
+
+.select-input:hover .select-input__label-option {
+    z-index: 1;
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+   margin: 0 12px;
+}
+
+.pagination-item--active .pagination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: #939393;
+    min-width: 40px; /*Nếu chiều ngang tăng lên thì nó sẽ tự động giản ra.*/
+    height: var(--height);
+    line-height: var(--height);
+    text-align: center;
+    border-radius: 2px;
 }
